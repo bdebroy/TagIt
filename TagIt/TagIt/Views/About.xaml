@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="TagIt.Views.About"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="About">
+    <StackLayout HorizontalOptions="CenterAndExpand"
+                 Orientation="Vertical"
+                 Padding="10,10,10,10"
+                 VerticalOptions="CenterAndExpand">
+        <ScrollView HorizontalOptions="FillAndExpand"
+                    IsEnabled="True"
+                    Orientation="Vertical"
+                    Padding="10,10,10,10"
+                    VerticalOptions="Fill">
+            <StackLayout HorizontalOptions="CenterAndExpand"
+                         Orientation="Vertical"
+                         VerticalOptions="FillAndExpand">
+                <Label FontAttributes="Bold"
+                       FontSize="Large"
+                       HorizontalOptions="CenterAndExpand"
+                       Text="TagIt#"
+                       TextColor="#3498db"
+                       VerticalOptions="CenterAndExpand" />
+                <BoxView AnchorY="2" />
+                <Label x:Name="AboutText"
+                       HorizontalTextAlignment="Start"
+                       LineBreakMode="WordWrap" />
+                <BoxView AnchorY="2" />
+                <Label LineBreakMode="WordWrap">TagIt uses Microsoft© Computer Vision API to detect the tags, all rights reserved.</Label>
+                <BoxView AnchorY="2" />
+
+                <Label LineBreakMode="WordWrap">
+                    Thanks for using TagIt !
+                </Label>
+                <BoxView AnchorY="3" />
+                <Label LineBreakMode="WordWrap">
+                    <Label.Text>
+                        Contact us: debroydev@outlook.com
+                    </Label.Text>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

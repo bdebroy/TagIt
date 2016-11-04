@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="TagIt.Views.Settings"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Settings"
+             BackgroundColor="White">
+    <StackLayout HorizontalOptions="FillAndExpand"
+                 Padding="15, 15 , 15 , 15"
+                 VerticalOptions="Center">
+        <Label x:Name="lblSliderAccuracy"
+               Text="Tags Accuracy"
+               TextColor="Black" />
+        <Slider x:Name="sldrAccuracy"
+                HorizontalOptions="FillAndExpand"
+                Maximum="90"
+                Minimum="10"
+                ValueChanged="onSliderChange"
+                Value="45" />
+    </StackLayout>
+</ContentPage>
